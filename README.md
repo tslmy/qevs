@@ -25,7 +25,6 @@ To unset an environment variable, just hit `esc`.
    curl https://raw.githubusercontent.com/tslmy/qevs/main/qevs.sh --output ~/bin/qevs.sh && chmod +x ~/bin/qevs.sh
    echo 'alias qs="~/bin/qevs.sh && source /tmp/choices.sh && rm /tmp/choices.sh"' >> ~/.zprofile
    ```
-   where `/path/to/envswitcher` should be the path to your Qevs.
 
 ## License
 
