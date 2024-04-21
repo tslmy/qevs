@@ -20,11 +20,19 @@ To unset an environment variable, just hit `esc`.
 
 1. Install `fzf`.
 2. For each environment variable `X` that you want to switch values, create a file named `_qevs/X_options.txt`, where each line is a possible value for this variable.
-3. Run these lines:
-   ```shell
-   curl https://raw.githubusercontent.com/tslmy/qevs/main/qevs.sh --output ~/bin/qevs.sh && chmod +x ~/bin/qevs.sh
-   echo 'alias qs="~/bin/qevs.sh && source /tmp/choices.sh && rm /tmp/choices.sh"' >> ~/.zprofile
-   ```
+
+### For bash, zsh, etc.
+Run these lines:
+```shell
+curl https://raw.githubusercontent.com/tslmy/qevs/main/qevs.sh --output ~/bin/qevs.sh && chmod +x ~/bin/qevs.sh
+echo 'alias qs="~/bin/qevs.sh && source /tmp/choices.sh && rm /tmp/choices.sh"' >> ~/.profile
+```
+
+### For fish
+Run these lines:
+```shell
+curl https://raw.githubusercontent.com/tslmy/qevs/main/qevs.fish --output ~/.config/fish/functions/qs.fish
+```
 
 ## License
 
